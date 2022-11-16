@@ -1,0 +1,14 @@
+server:
+  forward-headers-strategy: framework
+management:
+  endpoints:
+    enabled-by-default: true
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+      probes:
+        enabled: true
+      enabled: true
